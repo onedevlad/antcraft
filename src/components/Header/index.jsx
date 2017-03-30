@@ -1,17 +1,25 @@
 import React from 'react'
 import injectSheet from 'react-jss'
 
-import styles from 'styles/Header'
-import Icon from './Icon.jsx'
-import vkIcon from 'images/icons/vk.png'
+import Title from './Title'
+import Icons from './Icons'
+import fbIcon from 'images/icons/fb.png'
+
+
+const styles = {
+  root: {
+    width: '100%',
+  },
+}
 
 class Header extends React.Component {
   render() {
     const { classes } = this.props
 
     return(
-      <div className={classes.header}>
-        <Icon iconSrc={vkIcon} />
+      <div className={classes.root}>
+        <Icons />
+        <Title />
       </div>
     )
   }

@@ -1,3 +1,4 @@
+import "normalize.css/normalize.css"
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
