@@ -1,5 +1,6 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import { Col } from 'react-bootstrap'
 
 import Icon from './Icon'
 import fbIcon from 'images/icons/fb.png'
@@ -7,9 +8,9 @@ import fbIcon from 'images/icons/fb.png'
 
 const styles = {
   root: {
-    display: 'inline-block',
-    width: '33.33%',
-  },
+    position: 'absolute', // Yep. I hate myself as well
+    height: '100%',
+  }
 }
 
 
@@ -18,11 +19,11 @@ class Icons extends React.Component {
     const { classes } = this.props
 
     return (
-      <div className={classes.root}>
+      <Col md={4} className={classes.root}>
         <Icon src={fbIcon} />
         <Icon src={fbIcon} />
         <Icon src={fbIcon} />
-      </div>
+      </Col>
     )
   }
 }

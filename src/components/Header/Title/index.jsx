@@ -1,11 +1,9 @@
 import React from 'react'
 import injectSheet from 'react-jss'
-
+import { Col } from 'react-bootstrap'
 
 const styles = {
   root: {
-    display: 'inline-block',
-    width: '33.33%',
     textTransform: 'uppercase',
     textAlign: 'center',
   },
@@ -16,9 +14,9 @@ class Title extends React.Component {
     const { classes } = this.props
 
     return(
-      <div className = {classes.root}>
+      <Col md={4} mdPush={4} className = {classes.root}>
         <h1>Antcraft</h1>
-      </div>
+      </Col>
     )
   }
 }

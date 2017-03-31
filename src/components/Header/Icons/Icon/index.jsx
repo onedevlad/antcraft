@@ -4,13 +4,17 @@ import injectSheet from 'react-jss'
 
 const styles = {
   root: {
+    verticalAlign: 'middle',
+    position: 'relative',
+    top: '50%',
+    transform: 'translate(0, -50%)',
     display: 'inline-block',
     background: '#333',
     width: '1.5em',
     height: '1.5em',
     borderRadius: '50%',
     '&:not(:first-child):not(:last-child)': {
-      margin: '0 0.5em',
+      margin: '0 1.5em',
     },
   },
   iconImg: {

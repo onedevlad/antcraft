@@ -1,15 +1,16 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import { Row } from 'react-bootstrap'
 
 import Title from './Title'
 import Icons from './Icons'
-import fbIcon from 'images/icons/fb.png'
 
 
 const styles = {
   root: {
-    width: '100%',
-  },
+    position: 'relative',
+    overflow: 'hidden',
+  }
 }
 
 class Header extends React.Component {
@@ -17,10 +18,10 @@ class Header extends React.Component {
     const { classes } = this.props
 
     return(
-      <div className={classes.root}>
+      <Row className={`${classes.root} row-eq-height`}>
         <Icons />
         <Title />
-      </div>
+      </Row>
     )
   }
 }
