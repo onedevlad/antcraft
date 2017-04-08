@@ -1,6 +1,6 @@
 import React from 'react'
 import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
-import {Grid} from 'react-bootstrap'
+import { Grid } from 'react-flexbox-grid'
 
 import Header from './Header/index'
 
@@ -11,7 +11,7 @@ class AppComponent extends React.Component {
       <Grid fluid>
         <Header />
       </Grid>
-    );
+    )
   }
 }
 

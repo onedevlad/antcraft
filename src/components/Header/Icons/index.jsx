@@ -1,25 +1,17 @@
 import React from 'react'
 import injectSheet from 'react-jss'
-import { Col } from 'react-bootstrap'
+import {Col} from 'react-flexbox-grid'
 
 import Icon from './Icon'
 import fbIcon from 'images/icons/fb.png'
 
 
-const styles = {
-  root: {
-    position: 'absolute', // Yep. I hate myself as well
-    height: '100%',
-  }
-}
-
+const styles = {}
 
 class Icons extends React.Component {
   render() {
-    const { classes } = this.props
-
     return (
-      <Col md={4} className={classes.root}>
+      <Col md={4}>
         <Icon src={fbIcon} />
         <Icon src={fbIcon} />
         <Icon src={fbIcon} />
