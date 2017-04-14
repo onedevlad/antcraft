@@ -1,18 +1,28 @@
 import React from 'react'
-import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 import { Grid } from 'react-flexbox-grid'
+import injectSheet from 'react-jss'
+import Lato from 'fonts/Lato-Regular.ttf'
 
 import Header from './Header/index'
 
 
-class AppComponent extends React.Component {
-  render() {
-    return (
-      <Grid fluid>
-        <Header />
-      </Grid>
-    )
+const styles = {
+  '@font-face': {
+    fontFamily: 'Lato',
+    src: `url('${Lato}') format("truetype")`,
+  },
+  root: {
+    color: '#333',
+    padding: '0 15px',
+    fontFamily: '\'Lato\', sans-serif',
   }
 }
 
-export default AppComponent
+
+const AppComponent = ({classes}) => (
+  <Grid fluid className={classes.root}>
+    <Header />
+  </Grid>
+)
+
+export default injectSheet(styles)(AppComponent)

@@ -1,28 +1,24 @@
 import React from 'react'
-import injectSheet from 'react-jss'
 import { Row } from 'react-flexbox-grid'
+import injectSheet from 'react-jss'
 
-import Title from './Title'
-import Icons from './Icons'
+import Contacts from './Contacts/'
+import Title from './Title/'
+import Toolbar from './Toolbar/'
 
 
 const styles = {
   root: {
-    position: 'relative',
-    overflow: 'hidden',
+    padding: '1% 5%',
   }
 }
 
-class Header extends React.Component {
-  render() {
-    const { classes } = this.props
-    return(
-      <Row>
-        <Icons />
-        <Title />
-      </Row>
-    )
-  }
-}
+const Header = ({classes}) => (
+  <Row className={classes.root} middle='md'>
+    <Contacts />
+    <Title />
+    <Toolbar/>
+  </Row>
+)
 
 export default injectSheet(styles)(Header)
