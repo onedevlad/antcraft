@@ -4,6 +4,7 @@ import injectSheet from 'react-jss'
 import Lato from 'fonts/Lato-Regular.ttf'
 
 import Header from './Header/index'
+import Navigation from './Navigation/index'
 
 
 const styles = {
@@ -13,15 +14,15 @@ const styles = {
   },
   root: {
     color: '#333',
-    padding: '0 15px',
+    padding: '0',
     fontFamily: '\'Lato\', sans-serif',
   }
 }
 
-
 const AppComponent = ({classes}) => (
   <Grid fluid className={classes.root}>
     <Header />
+    <Navigation />
   </Grid>
 )
 
