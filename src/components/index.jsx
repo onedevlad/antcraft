@@ -5,6 +5,7 @@ import Lato from 'fonts/Lato-Regular.ttf'
 
 import Header from './Header/index'
 import Navigation from './Navigation/index'
+import Footer from './Footer/index'
 
 
 const styles = {
@@ -23,6 +24,7 @@ const AppComponent = ({classes}) => (
   <Grid fluid className={classes.root}>
     <Header />
     <Navigation />
+    <Footer />
   </Grid>
 )
 
