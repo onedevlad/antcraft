@@ -24,6 +24,7 @@ const AppComponent = ({classes}) => (
   <Grid fluid className={classes.root}>
     <Header />
     <Navigation />
+    <Test />
     <Footer />
   </Grid>
 )
